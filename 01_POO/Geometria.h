@@ -3,7 +3,13 @@
 
 
 class Geometria {
-
+protected:
+    float alto, ancho;
+    char color[10];
+public:
+    void set
+    float GetSuperficie(float, float);
+    float GetPerimetro(float, float);
 };
 
 
