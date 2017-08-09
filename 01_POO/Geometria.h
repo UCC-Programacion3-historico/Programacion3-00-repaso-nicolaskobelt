@@ -1,15 +1,25 @@
+#include "Color.h"
 #ifndef REPASO_GEOMETRIA_H
 #define REPASO_GEOMETRIA_H
 
 
 class Geometria {
 protected:
-    float alto, ancho;
-    char color[10];
+    int alto, ancho;
 public:
-    void set
-    float GetSuperficie(float, float);
-    float GetPerimetro(float, float);
+    Color col;
+    Geometria(int, int);
+    Geometria();
+
+    int getAlto();
+    int getAncho();
+
+    void setAlto(int alto);
+    void setAncho(int ancho);
+
+    virtual float getSuperficie()=0;
+    virtual float getPerimetro()=0;
+
 };
 
 
